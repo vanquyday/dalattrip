@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="map.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
   </head>
   <body>
     <div class="grain"></div>
@@ -68,8 +70,9 @@
       <section class="budget" id="ngan-sach"><div><p class="eyebrow">Dự tính cho một người</p><h2>2,1 — 4,1 triệu <em>đồng</em></h2><p>Khoảng chi phí hợp lý để cứ thong thả tận hưởng Đà Lạt.</p></div><div class="budget-bars"><div><span>Khách sạn</span><b style="--w:80%">500k – 1.2m</b></div><div><span>Ăn uống</span><b style="--w:80%">700k – 1.2m</b></div><div><span>Đi chơi & cafe</span><b style="--w:55%">500k – 1m</b></div><div><span>Di chuyển & khác</span><b style="--w:38%">400k – 750k</b></div></div></section>
     </main>
     <footer><p>Đà Lạt, hẹn nhau ở một buổi sớm nhiều mây.</p><span>Made with ♡ for our little escape</span></footer>
-    <template id="foodTemplate"><article class="food-card"><div class="food-image"><span>+</span><small>Thêm ảnh của bạn</small></div><div><p class="food-number"></p><h3></h3></div></article></template>
+    <template id="foodTemplate"><article class="food-card"><div class="food-image"><img alt="" loading="lazy" referrerpolicy="no-referrer" /></div><div><p class="food-number"></p><h3></h3></div></article></template>
     <template id="placeTemplate"><article class="place-card"><img alt="" loading="lazy" /><div><span></span><h3></h3></div></article></template>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
     <script src="app.js"></script>
   </body>
 </html>
