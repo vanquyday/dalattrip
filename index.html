@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#183d35" />
+    <title>Đà Lạt — Chuyến đi của chúng mình</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="topbar">
+      <a class="brand" href="#home"><span>ĐL</span> chuyến đi</a>
+      <nav><a href="#hanh-trinh">Hành trình</a><a href="#lich-trinh">Lịch trình</a><a href="#vi-ngon">Vị ngon</a><a href="#ngan-sach">Ngân sách</a></nav>
+      <button class="sound-toggle" aria-label="Bật hoặc tắt âm thanh nền"><span>♫</span> ambience</button>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="mist mist-1"></div><div class="mist mist-2"></div>
+        <p class="eyebrow">03 ngày · 02 đêm · 04 người</p>
+        <h1>Đà Lạt,<br /><em>mình đi nhé?</em></h1>
+        <p class="hero-copy">Một hành trình chậm rãi: ăn ngon, cà phê đẹp, những khung hình thật xinh và thật nhiều khoảng thở.</p>
+        <div class="hero-actions"><a class="button primary" href="#hanh-trinh">Khởi hành chuyến đi <span>↓</span></a><button class="button ghost" id="playTrip">▶ Xem hành trình</button></div>
+        <div class="trip-stats"><div><b>03</b><span>ngày rong chơi</span></div><div><b>12+</b><span>điểm dừng chân</span></div><div><b>04</b><span>người đồng hành</span></div></div>
+        <div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+      </section>
+
+      <section class="route-section" id="hanh-trinh">
+        <div class="section-heading"><p class="eyebrow">Bản đồ hành trình</p><h2>Theo dấu chân <em>chúng mình</em></h2><p>Chọn một ngày hoặc nhấn phát để xem bốn người bạn di chuyển qua từng điểm dừng.</p></div>
+        <div class="route-layout">
+          <div class="map-card">
+            <div class="map-top"><span class="live-dot"></span><span id="mapLabel">Đang ở: Đà Lạt</span><span id="mapTime">08:00</span></div>
+            <div class="map-stage" id="mapStage">
+              <svg class="route-map" viewBox="0 0 760 590" role="img" aria-label="Bản đồ minh hoạ hành trình Đà Lạt">
+                <defs><filter id="shadow"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-opacity=".22"/></filter></defs>
+                <path class="terrain t1" d="M0 115C100 30 162 117 239 74S372 3 455 83s133 13 305-37v544H0Z"/><path class="terrain t2" d="M0 220c88-41 163-24 230 29 94 75 131-71 232-28 86 36 114 124 298 62v307H0Z"/>
+                <path class="lake" d="M286 308c39-24 98-16 114 9 15 23-17 51-70 49-61-2-77-38-44-58Z"/>
+                <path class="road" d="M366 317 C451 307 442 209 548 162 S655 143 681 80"/><path class="road" d="M365 317 C452 351 500 414 548 472"/><path class="road" d="M365 317 C310 265 220 230 174 170"/><path class="road" d="M365 317 C318 385 256 442 191 492"/>
+              </svg>
+              <svg class="route-lines" viewBox="0 0 760 590" preserveAspectRatio="none"><path id="routePath" d="M366 317 C310 265 220 230 174 170 C250 213 335 256 366 317 C451 307 442 209 548 162 S655 143 681 80 C635 138 520 260 366 317 C452 351 500 414 548 472 C505 429 443 375 366 317 C318 385 256 442 191 492"/></svg>
+              <div class="pin hotel" data-place="Khách sạn · Trung tâm" style="--x:48.2%;--y:53.7%"><i>⌂</i></div>
+              <div class="pin" data-place="Vườn hoa thành phố" style="--x:44%;--y:46.5%"><i>✿</i></div>
+              <div class="pin" data-place="Ga Đà Lạt" style="--x:31.5%;--y:29%"><i>⌁</i></div>
+              <div class="pin" data-place="Hồ Xuân Hương / Lâm Viên" style="--x:48%;--y:53.5%"><i>◌</i></div>
+              <div class="pin" data-place="Chợ đêm Đà Lạt" style="--x:49%;--y:57%"><i>★</i></div>
+              <div class="pin" data-place="Cầu Đất" style="--x:89.5%;--y:13.5%"><i>☁</i></div>
+              <div class="pin" data-place="Đồi chè Cầu Đất" style="--x:72%;--y:27%"><i>♧</i></div>
+              <div class="pin" data-place="Thác Datanla" style="--x:72%;--y:80%"><i>⌇</i></div>
+              <div class="pin" data-place="Cafe view đồi" style="--x:68%;--y:78%"><i>☕</i></div>
+              <div class="pin" data-place="Dinh I Bảo Đại" style="--x:25%;--y:83.5%"><i>♜</i></div>
+              <div class="travellers" id="travellers" style="--x:48.2%;--y:53.7%"><span class="person p1">♂</span><span class="person p2">♀</span><span class="person p3">♂</span><span class="person p4">♀</span></div>
+              <div class="map-compass">N<br><span>✦</span></div>
+            </div>
+            <div class="map-legend"><span><i class="legend-route"></i> tuyến di chuyển</span><span><i class="legend-group"></i> nhóm của chúng mình</span><button id="restartMap">↺ Chạy lại</button></div>
+          </div>
+          <aside class="route-controls"><div class="day-tabs"><button class="active" data-day="0">Ngày 01</button><button data-day="1">Ngày 02</button><button data-day="2">Ngày 03</button></div><div id="stopList" class="stop-list"></div></aside>
+        </div>
+      </section>
+
+      <section class="itinerary" id="lich-trinh"><div class="section-heading centered"><p class="eyebrow">Nhịp điệu của chuyến đi</p><h2>Chậm lại để <em>cảm nhận</em></h2></div><div class="day-panels" id="dayPanels"></div></section>
+      <section class="places-section"><div class="section-heading"><p class="eyebrow">Những khung hình để nhớ</p><h2>Điểm hẹn của<br /><em>thành phố sương</em></h2></div><div class="place-gallery" id="placeGallery"></div></section>
+      <section class="food-section" id="vi-ngon"><div class="food-intro"><p class="eyebrow">Những điều ngon lành</p><h2>Đà Lạt qua<br /><em>một chiếc bụng đói</em></h2><p>Bộ ảnh món ngon đã được gắn vào hành trình. Khi có ảnh của riêng mình, bạn có thể thay các đường dẫn ảnh trong <code>app.js</code>.</p><a class="text-link" href="README.md">Xem hướng dẫn thay ảnh →</a></div><div class="food-grid" id="foodGrid"></div></section>
+      <section class="budget" id="ngan-sach"><div><p class="eyebrow">Dự tính cho một người</p><h2>2,1 — 4,1 triệu <em>đồng</em></h2><p>Khoảng chi phí hợp lý để cứ thong thả tận hưởng Đà Lạt.</p></div><div class="budget-bars"><div><span>Khách sạn</span><b style="--w:80%">500k – 1.2m</b></div><div><span>Ăn uống</span><b style="--w:80%">700k – 1.2m</b></div><div><span>Đi chơi & cafe</span><b style="--w:55%">500k – 1m</b></div><div><span>Di chuyển & khác</span><b style="--w:38%">400k – 750k</b></div></div></section>
+    </main>
+    <footer><p>Đà Lạt, hẹn nhau ở một buổi sớm nhiều mây.</p><span>Made with ♡ for our little escape</span></footer>
+    <template id="foodTemplate"><article class="food-card"><div class="food-image"><span>+</span><small>Thêm ảnh của bạn</small></div><div><p class="food-number"></p><h3></h3></div></article></template>
+    <template id="placeTemplate"><article class="place-card"><img alt="" loading="lazy" /><div><span></span><h3></h3></div></article></template>
+    <script src="app.js"></script>
+  </body>
+</html>
